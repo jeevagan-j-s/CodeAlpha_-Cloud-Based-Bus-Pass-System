@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Pass Details</title>
+</head>
+<body>
+
+    <h1>Bus Pass Details</h1>
+
+    {% if data %}
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Bus Pass ID</th>
+            <td>{{ data[0] }}</td>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <td>{{ data[1] }}</td>
+        </tr>
+
+        <tr>
+            <th>Student ID</th>
+            <td>{{ data[2] }}</td>
+        </tr>
+
+        <tr>
+            <th>College</th>
+            <td>{{ data[3] }}</td>
+        </tr>
+
+        <tr>
+            <th>Source</th>
+            <td>{{ data[4] }}</td>
+        </tr>
+
+        <tr>
+            <th>Destination</th>
+            <td>{{ data[5] }}</td>
+        </tr>
+
+        <tr>
+            <th>Mobile Number</th>
+            <td>{{ data[6] }}</td>
+        </tr>
+    </table>
+
+    {% else %}
+
+    <h2 style="color:red;">Bus Pass Not Found!</h2>
+
+    {% endif %}
+
+    <br>
+
+    <a href="/">🏠 Home</a>
+
+</body>
+</html>
